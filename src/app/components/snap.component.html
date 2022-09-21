@@ -1,0 +1,23 @@
+
+<table>
+  <tr>
+    <td>
+      <div class="center-it">
+        <webcam [width]="width" [trigger]="trigger" (imageCapture)="snapshot($event)">
+        </webcam>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="center-it">
+        <button type="button" (click)="takePicture()" mat-raised-button color="primary">
+          Snap
+          <mat-icon>photo_camera</mat-icon>
+        </button>
+      </div>
+    </td>
+  </tr>
+
+</table>
+
